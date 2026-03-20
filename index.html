@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+  
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/afifa-akter-3ba124228/" target="_blank">AFIFA 
+              <i class="fab fa-linkedin"></i></a>
+           
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#about-me-card">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="workDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="workDropdown">
+              <li><a class="dropdown-item" href="#myWork">My Work</a></li>
+              <li><a class="dropdown-item" href="#experience">Job Experience</a></li>
+              <li><a class="dropdown-item" href="#ongoing">Ongoing Projects</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+     
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Hello, I'm Afifa Akter</h1>
+      <p>A passionate Web Developer & Designer working with AI & ML</p>
+       <a href="#myWork" class="mywork-btn">
+              My Work
+        </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about-me-card">
+  <div class="about-mail-container">
+    <div class="about-mail-wrapper">
+      <div class="about-mail-content">
+              <h2 class="about-title">About Me</h2>
+
+        <div class="about-profile-wrapper">
+          <!-- Header -->
+          <div class="about-profile-header">
+            <div class="about-profile-avatar">
+              <img src="assets/img/myphoto.png" alt="My Photo">
+            </div>
+            <h1>Afifa Akter</h1> 
+            
+            <h2>Full-Stack Web Developer</h2>
+          </div>
+
+          <!-- Bio -->
+          <div class="about-profile-bio">
+            <p class="short-description">
+              Hi! I'm Afifa, a passionate developer working with Python and Artificial Intelligence, with a strong interest in cybersecurity. I enjoy exploring complex problems and building intelligent solutions, and I am deeply committed to continuous learning and research in these fields.
+            </p>
+
+            <div id="about-bio-wrapper">
+              <div id="about-show-more-icon" class="no-select">
+                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+              </div>
+
+              <!-- Social Links -->
+              <div class="about-social-list">
+                <ul>
+                  <li class="bio-item paper-button">
+                    <a href="https://www.linkedin.com/in/afifa-akter-3ba124228/" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+
+                  <li class="bio-item paper-button">
+                    <a href="https://wa.me/880177156123" target="_blank">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li class="bio-item paper-button">
+                    <a href="mailto:afifauttara444@gmail.com">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Extra Bio -->
+              <div class="about-bio-extra">
+                <p>I am a dedicated and passionate developer with a strong focus on Python and Artificial Intelligence, driven by a deep curiosity to understand how intelligent systems can solve real-world problems. My interest in cybersecurity further strengthens my goal of building secure, reliable, and efficient digital solutions. I enjoy working on challenging projects that push my limits, allowing me to continuously grow both technically and intellectually. With every project, I strive to combine creativity with logical thinking to develop meaningful and impactful outcomes.</p>
+                <p>Beyond development, I am highly passionate about learning and conducting in-depth research in the fields of AI, Python, and cybersecurity. I believe that true expertise comes from consistent exploration, critical thinking, and hands-on experimentation. I am always motivated to dive deeper into complex topics, analyze new trends, and expand my knowledge through continuous study. My long-term goal is to contribute to innovative research and create advanced solutions that can make a positive difference in the world, while constantly evolving as a skilled and responsible technology professional.</p>
+                <p>If you want to get in touch, feel free to <a href="mailto:afifauttara444@gmail.com">email me</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-bottom-ball-fill"></div>
+</section>
+  <!-- Education Section -->
+  <section id="education" class="edu-section">
+    <div class="edu-inner">
+      
+      <h2 class="edu-title">Education</h2>
+
+      <div class="edu-grid">
+
+        <article class="edu-item">
+          <h3>B.Sc in Computer Science</h3>
+          <p>Uttara University, 2024</p>
+          <span>CGPA: 3.37 / 4.0</span>
+        </article>
+
+        <article class="edu-item">
+          <h3>Higher Secondary Certificate</h3>
+          <p>Kishoreganj Govt. Women's College, 2014</p>
+          <span>GPA: 3.1 / 5.0</span>
+        </article>
+
+        <article class="edu-item">
+          <h3>Secondary School Certificate</h3>
+          <p>Barmi Bazar High School, 2011</p>
+          <span>GPA: 4.69 / 5.0</span>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- Skills Section -->
+<section id="skills" class="circle-skill-section">
+    <div class="skill-header">
+      <h2>My Skills</h2>
+    </div>
+  <div class="circle-wrapper">
+
+    <!-- Row 1 -->
+    <div class="circle-card">
+      <div class="circle-box html"><span></span></div>
+      <p>HTML</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box css"><span></span></div>
+      <p>CSS</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box js"><span></span></div>
+      <p>JavaScript</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box bootstrap"><span></span></div>
+      <p>Bootstrap</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="circle-card">
+      <div class="circle-box python"><span></span></div>
+      <p>Python</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box django"><span></span></div>
+      <p>Django</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box php"><span></span></div>
+      <p>PHP</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle-box sql"><span></span></div>
+      <p>SQL</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- My Work Section -->
+  <section id="myWork" class="work-section">
+    <div class="grain-bg"></div>
+
+    <div class="container text-center">
+      <h2 class="work-title">My Projects & Development Work</h2>
+
+      <div class="work-grid">
+
+        <!-- Project -->
+        <div class="work-card">
+          <div class="work-content">
+            <h2>Easy <br> Payment System</h2>
+            <p>Web-based payment system using HTML, CSS, PHP, Laravel, SQL.</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <h2>HR <br> Management</h2>
+            <p>Employee, attendance & payroll system using Laravel and SQL.</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <h2>Hospital <br> System</h2>
+            <p>Patient management & hospital workflow system.</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <h2>Salary <br> Prediction</h2>
+            <p>ML model using Linear Regression (Python, Django).</p>
+            
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <h2>Diabetes <br> Detection</h2>
+            <p>Predict diabetes risk using ML regression model.</p>
+          
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <h2>Heart Disease <br> Detection</h2>
+            <p>KNN-based ML system for heart disease prediction.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ongoing" class="work-section">
+    <div class="grain-bg"></div>
+
+    <div class="container text-center">
+      <h2 class="work-title">Ongoing Projects</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="work-card">
+              <div class="work-content">
+                <h5 class="card-title">World-Changing Social Platform</h5>
+                  <p>Unique social platform using JS, Django, Python, PostgreSQL.</p>
+              </div>
+            </div>
+          </div>  
+          <div class="col-md-6">
+              <div class="work-card">
+                <div class="work-content">
+                  <h5 class="card-title">Stock Market Prediction</h5>
+                  <p>Predictive system analyzing stock trends using Python, Django, Scikit-learn, real-time APIs.</p>
+                </div>
+              </div>
+          </div>
+       
+        </div>  
+  
+    </div>
+  </section>
+  <!-- Ongoing Projects -->
+  <!-- <section id="ongoing">
+    <div class="container">
+      <h2 class="text-center mb-5">Ongoing Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">World-Changing Social Platform</h5>
+              <p>Unique social platform using JS, Django, Python, PostgreSQL.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Stock Market Prediction</h5>
+              <p>Predictive system analyzing stock trends using Python, Django, Scikit-learn, real-time APIs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section id="experience" class="ex-section">
+    <div class="ex-inner">
+      
+      <h2 class="ex-title">Job Experience</h2>
+
+      <div class="ex-grid">
+
+        <article class="ex-item">
+          <h5 class="card-title">Software Developer</h5>
+          <p><strong>Company:</strong> Vintage IT</p>
+          <p><strong>Duration:</strong> Jan 2024 – Present</p>
+          <p>Web development including HR management & internal tools using HTML, CSS, Python, Django, SQL.</p>
+        </article>
+
+        <article class="ex-item">
+          <h5 class="card-title">Web Developer</h5>
+              <p><strong>Company:</strong> Idol Group</p>
+              <p><strong>Duration:</strong> Feb 2023 – Nov 2024</p>
+              <p>Assisted in ML & web projects, data analysis, prediction models, small web apps with Django & Python.</p>
+        </article>
+
+        <article class="ex-item">
+          <h5 class="card-title">Intern – Web & ML Projects</h5>
+          <p><strong>Company:</strong> EPS - Easy Payment System</p>
+          <p><strong>Duration:</strong> Jan 2021 – Jan 2023</p>
+          <p>Developed & maintained company websites, integrated databases, backend development using PHP, MySQL, Bootstrap.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research Section -->
+ 
+  <section id="research" class="research-section">
+    <div class="container">
+      <h2 class="text-center research-header">Research</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+
+          <div class="research-card">
+            <h3 class="research-title">
+              Predictive Model for Cybersecurity Threat Detection
+            </h3>
+
+            <p class="research-desc">
+              Predict cybersecurity threats using ML. Analyze network traffic datasets for known & zero-day attacks.
+            </p>
+
+            <p class="research-tools">
+              <strong>Tools:</strong> Python, Scikit-learn, Pandas, dataset analysis.
+            </p>
+
+            <a href="https://doi.org/10.5281/zenodo.19043495" target="_blank" class="research-btn">
+              View Paper (DOI)
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="text-center contact-header mb-5">Contact Me</h2>
+
+    <div class="row justify-content-center align-items-center">
+
+      <!-- LEFT: CONTACT CARDS -->
+      <div class="col-md-4">
+        <div class="my-contact-info">
+
+          <div class="my-contact-card">
+            <i class="fas fa-file-pdf my-contact-icon"></i>
+            <h3>CV</h3>
+            
+            <a href="assets/pdf/Afifa_Akter_Cv.pdf" download class="my-contact-btn">
+              Download My CV <i class="fa fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="my-contact-card">
+            <i class="fa fa-envelope my-contact-icon"></i>
+            <h3>Email</h3>
+            <span>afifauttara444@gmail.com</span>
+            <a href="mailto:afifauttara444@gmail.com" class="my-contact-btn">
+              Write me <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="my-contact-card">
+            <i class="fab fa-whatsapp my-contact-icon"></i>
+            <h3>WhatsApp</h3>
+            <span>+880177167123</span>
+            <a href="https://wa.me/880177167123" target="_blank" class="my-contact-btn">
+              Message me <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="col-md-6">
+        <form class="my-contact-form" id="contact-form">
+
+          <div class="my-input-group">
+            <input type="text" name="name" required>
+            <label>Your Name</label>
+          </div>
+
+          <div class="my-input-group">
+            <input type="email" name="email" required>
+            <label>Your Email</label>
+          </div>
+<!-- 
+          <div class="my-input-group">
+            <input type="tel" name="phone">
+            <label>Phone</label>
+          </div> -->
+          <div class="my-input-group">
+            <input type="text" name="title" required>
+            <label>Title</label>
+          </div>
+
+          <div class="my-input-group textarea">
+            <textarea name="message" id="message" required></textarea>
+            <label>Message</label>
+            <small id="word-count">0 / 40 words</small>
+          </div>
+
+          <button type="submit" class="my-contact-submit">
+            <i class="far fa-paper-plane"></i>Send Message
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <button id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+  </button>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Afifa Akter. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS & Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="assets/js/script.js"></script>
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a.nav-link, a.dropdown-item').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if(this.hash !== "") {
+          e.preventDefault();
+          document.querySelector(this.hash).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+
+<script>
+document.querySelectorAll(".circle-box").forEach((el)=>{
+  let degree = getComputedStyle(el).backgroundImage;
+  
+  if(degree.includes("342")) el.querySelector("span").innerText="95%";
+  if(degree.includes("324")) el.querySelector("span").innerText="90%";
+  if(degree.includes("306")) el.querySelector("span").innerText="85%";
+  if(degree.includes("288")) el.querySelector("span").innerText="80%";
+  if(degree.includes("270")) el.querySelector("span").innerText="60%";
+  if(degree.includes("252")) el.querySelector("span").innerText="70%";
+});
+</script>
+
+<script>
+  const aboutBioIcon = document.getElementById('about-show-more-icon');
+const aboutBioWrap = document.getElementById('about-bio-wrapper');
+
+if (aboutBioIcon) {
+  aboutBioIcon.addEventListener('click', () => {
+    aboutBioWrap.classList.toggle('show-more-info');
+  });
+}
+</script>
+
+
+<script>
+  (function(){
+    emailjs.init("tuVaqb17QkRdwuQtn");
+  })();
+</script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_sjt7oju", "template_pw8k6lh", this)
+    .then(function() {
+      alert("Message sent successfully!");
+    }, function(error) {
+      alert("Failed to send message!");
+      console.log(error);
+    });
+});
+</script>
+
+<script>
+const textarea = document.getElementById("message");
+const wordCountDisplay = document.getElementById("word-count");
+const maxWords = 50; // set your word limit here
+
+textarea.addEventListener("input", () => {
+  const words = textarea.value.trim().split(/\s+/).filter(word => word.length > 0);
+  
+  if (words.length > maxWords) {
+    // Trim extra words
+    textarea.value = words.slice(0, maxWords).join(" ");
+  }
+  
+  // Update counter
+  wordCountDisplay.textContent = `${textarea.value.trim().split(/\s+/).filter(w => w.length>0).length} / ${maxWords} words`;
+});
+</script>
+</body>
+</html>
